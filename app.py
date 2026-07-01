@@ -42,14 +42,14 @@ def save_user_data(user_id, username):
         writer = csv.writer(file)
         writer.writerow([user_id, username])
 
-st.set_page_config(page_title="OmniAssist AI ", layout="wide")
+st.set_page_config(page_title="AI-Enabled Helpdesk", layout="wide")
 st.title("🤖 AI-Enabled Helpdesk")
 
 # Create tabs for the 3 main functions
 tab1, tab2, tab3 = st.tabs(["📝 Register User", "🧠 Train Model", "👁️ Live Helpdesk"])
 
 # --- TAB 1: REGISTER USER ---
-with tab1:
+with tab1: 
     st.header("Register New User")
     
     with st.form("registration_form", clear_on_submit=True):
